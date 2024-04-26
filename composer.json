@@ -1,0 +1,37 @@
+{
+    "name": "kelude/fortify-api",
+    "description": "",
+    "keywords": ["laravel", "fortify", "api"],
+    "license": "MIT",
+    "version": "0.0.6",
+    "require": {
+        "php": "^8.2.0",
+        "laravel/fortify": "^1.21",
+        "illuminate/console": "^11.0",
+        "illuminate/filesystem": "^11.0",
+        "illuminate/support": "^11.0",
+        "illuminate/validation": "^11.0",
+        "symfony/console": "^7.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Kelude\\FortifyApi\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Kelude\\FortifyApi\\FortifyApiServiceProvider"
+            ]
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "require-dev": {
+        "orchestra/testbench": "^9.0",
+        "phpstan/phpstan": "^1.10"
+    }
+}
